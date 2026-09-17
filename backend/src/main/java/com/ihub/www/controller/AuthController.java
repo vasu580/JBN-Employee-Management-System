@@ -11,17 +11,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ihub.www.service.AuthService;
 
-@CrossOrigin(value = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://jbn-employee-management-system.vercel.app"
+})
 @RestController
 @RequestMapping("/api/auth")
-public class AuthController 
-{
-	@Autowired
-	AuthService authService;
-	
-	@PostMapping("/login")
-	public boolean login(@RequestBody Map<String,String> data)
-	{
-		return authService.login(data.get("username"), data.get("password"));
-	}
+public class AuthController {
+
+    @Autowired
+    AuthService authService;
+
+    @PostMapping("/login")
+    public boolean login(@RequestBody Map<String, String> data) {
+
+        return authService.login(
+            data.get("username"),
+            data.get("password")
+        );
+    }
 }
