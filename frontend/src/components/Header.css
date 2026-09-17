@@ -1,0 +1,118 @@
+/* =========================
+   HEADER
+========================= */
+
+.header-navbar {
+  background: #ffffff;
+  padding: 11px 0;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 3px 15px rgba(15, 23, 42, 0.06);
+  z-index: 1000;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #12365d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 14px rgba(18, 54, 93, 0.18);
+  margin-right: 10px;
+}
+
+/* =========================
+   COMPANY
+========================= */
+
+.header-company {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.header-company strong {
+  color: #12365d;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.header-company span {
+  color: #94a3b8;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-top: 4px;
+}
+
+/* =========================
+   ADMIN
+========================= */
+
+.admin-box {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  padding: 6px 11px;
+  border-radius: 9px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.user-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #eaf2f9;
+  color: #174b7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.admin-box span {
+  color: #334155;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout-button {
+  height: 38px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 9px;
+  background: #12365d;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(18, 54, 93, 0.16);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.logout-button:hover {
+  background: #174b7d;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 17px rgba(18, 54, 93, 0.22);
+}
